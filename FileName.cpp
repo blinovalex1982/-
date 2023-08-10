@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <cstdlib>
 #include <ctime>
 
@@ -6,8 +6,8 @@ int main() {
 	setlocale(LC_ALL, "RU");
 	int n, m;
 
-	// Задача 1. Сортирова первых N элементов
-	/*std::cout << "Задача 1. \nИзначальный массив: \n";
+	// Р—Р°РґР°С‡Р° 1. РЎРѕСЂС‚РёСЂРѕРІР° РїРµСЂРІС‹С… N СЌР»РµРјРµРЅС‚РѕРІ
+	/*std::cout << "Р—Р°РґР°С‡Р° 1. \nРР·РЅР°С‡Р°Р»СЊРЅС‹Р№ РјР°СЃСЃРёРІ: \n";
 	const int size1 = 10;
 	int arr1[size1]{};
 	srand(time(NULL));
@@ -17,27 +17,27 @@ int main() {
 	}
 		std::cout << std::endl;
 
-		std::cout << " Введите количество элементов для сортировки ->";
+		std::cout << " Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РґР»СЏ СЃРѕСЂС‚РёСЂРѕРІРєРё ->";
 		std::cin >> n;
 		while (n<2 || n>size1) {
-			std::cout << "Ошибка ввода! Повторите ввод -> ";
+			std::cout << "РћС€РёР±РєР° РІРІРѕРґР°! РџРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ -> ";
 			std::cin >> n;
 
 		}
-		// Пузырьковая сортировка
+		// РџСѓР·С‹СЂСЊРєРѕРІР°СЏ СЃРѕСЂС‚РёСЂРѕРІРєР°
 		for (int i = n - 1; i > 0; i--)
 			for (int j = 0; j < i; j++)
 				if (arr1[j] > arr1[j + 1])
 					std::swap(arr1[j], arr1[j + 1]);
 
-		std::cout << " Итоговый массив: \n";
+		std::cout << " РС‚РѕРіРѕРІС‹Р№ РјР°СЃСЃРёРІ: \n";
 		for (int i = 0; i < size1; i++)
 			std::cout << arr1[i] << ' ';
 			std::cout << "\n\n";*/
 
 
-			// Задача 2. Температура в янавре
-			/*std::cout << " Задача 2. \nТемпература в январе: \n ";
+			// Р—Р°РґР°С‡Р° 2. РўРµРјРїРµСЂР°С‚СѓСЂР° РІ СЏРЅР°РІСЂРµ
+			/*std::cout << " Р—Р°РґР°С‡Р° 2. \nРўРµРјРїРµСЂР°С‚СѓСЂР° РІ СЏРЅРІР°СЂРµ: \n ";
 			const int january_days = 31;
 			int january_temperature[january_days]{};
 			for (int day_number = 0; day_number < january_days; day_number++) {
@@ -46,28 +46,28 @@ int main() {
 				std::cout << january_temperature[day_number] << ", ";
 
 			}
-			std::cout << "\b\b.\nВведите число -> ";
+			std::cout << "\b\b.\nР’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ -> ";
 			std::cin >> n;
-			int sum = 0; // для суммы температур января
-			int counter = 0;// для подсчета температур < n
+			int sum = 0; // РґР»СЏ СЃСѓРјРјС‹ С‚РµРјРїРµСЂР°С‚СѓСЂ СЏРЅРІР°СЂСЏ
+			int counter = 0;// РґР»СЏ РїРѕРґСЃС‡РµС‚Р° С‚РµРјРїРµСЂР°С‚СѓСЂ < n
 			for (int day_number = 0; day_number < january_days; day_number++) {
 				sum += january_temperature[day_number];
 				if (january_temperature[day_number] < n)
 					counter++;
 			 }
-			std::cout << " Ср.температура: " << sum / double(january_days) << std::endl;
-			std::cout << " Количество дней, когда температура ниже " << n << ": " << counter << "\n\n";
+			std::cout << " РЎСЂ.С‚РµРјРїРµСЂР°С‚СѓСЂР°: " << sum / double(january_days) << std::endl;
+			std::cout << " РљРѕР»РёС‡РµСЃС‚РІРѕ РґРЅРµР№, РєРѕРіРґР° С‚РµРјРїРµСЂР°С‚СѓСЂР° РЅРёР¶Рµ " << n << ": " << counter << "\n\n";
 			*/
 
-			// Задача 3. Вхождение в диапазон
-			/*std::cout << " Задача 3. \nВведите начало диапазона -> ";
+			// Р—Р°РґР°С‡Р° 3. Р’С…РѕР¶РґРµРЅРёРµ РІ РґРёР°РїР°Р·РѕРЅ
+			/*std::cout << " Р—Р°РґР°С‡Р° 3. \nР’РІРµРґРёС‚Рµ РЅР°С‡Р°Р»Рѕ РґРёР°РїР°Р·РѕРЅР° -> ";
 			std::cin >> n;
-			std::cout << " Введите конец диапазона -> ";
+			std::cout << " Р’РІРµРґРёС‚Рµ РєРѕРЅРµС† РґРёР°РїР°Р·РѕРЅР° -> ";
 			std::cin >> m;
 
 			const int size3 = 20;
 			int arr3[size3]{};
-			std::cout << "Итог:\n";
+			std::cout << "РС‚РѕРі:\n";
 			srand(time(NULL));
 			for (int i = 0; i < size3; i++) {
 				arr3[i] = rand() % 100; // [0...100)
@@ -78,7 +78,7 @@ int main() {
 				std::cout << i + 1 << ". " << arr3[i] << (arr3[i] >= n && arr3[i] <= m ? "!" : "") << '\n';
 			}*/
 
-	/*std::cout << "Задача 1. \nОдномерный массив размером в 10 элементов: \n\n";
+	/*std::cout << "Р—Р°РґР°С‡Р° 1. \nРћРґРЅРѕРјРµСЂРЅС‹Р№ РјР°СЃСЃРёРІ СЂР°Р·РјРµСЂРѕРј РІ 10 СЌР»РµРјРµРЅС‚РѕРІ: \n\n";
 	const int size1 = 10;
 	int arr1[size1]{};
 	int sum = 0;
@@ -88,16 +88,16 @@ int main() {
 		std::cout << arr1[i] << ' ';
 		sum += arr1[i];
 	}
-		std::cout << "\n\nСред.ариф. массива = " << sum / double(size1) << '\n';
+		std::cout << "\n\nРЎСЂРµРґ.Р°СЂРёС„. РјР°СЃСЃРёРІР° = " << sum / double(size1) << '\n';
 		int k = 0;
 		for(int i = 0; i < size1; i++)
 		if (arr1[i] < sum / double(size1)) {
 			k++;
 		}
-		std::cout << "\nКол-во элементов, значение которых меньше средн.ариф.= " << k << std::endl;
+		std::cout << "\nРљРѕР»-РІРѕ СЌР»РµРјРµРЅС‚РѕРІ, Р·РЅР°С‡РµРЅРёРµ РєРѕС‚РѕСЂС‹С… РјРµРЅСЊС€Рµ СЃСЂРµРґРЅ.Р°СЂРёС„.= " << k << std::endl;
 	*/
 
-	std::cout << "Задача 2. \n Массив №1\n";
+	std::cout << "Р—Р°РґР°С‡Р° 2. \n РњР°СЃСЃРёРІ в„–1\n";
 
 
 	return 0;
